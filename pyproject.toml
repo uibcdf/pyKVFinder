@@ -2,7 +2,6 @@
 requires = [
     "setuptools>=77.0.3",
     "wheel>=0.45",
-    "Cython>=3.0.8",
     "swig>=4.4.1",
     # NumPy is required at build time for wheel generation.
     # Building against NumPy 2.x produces wheels compatible with NumPy 1.x at runtime.
@@ -58,12 +57,16 @@ classifiers = [
     'Operating System :: MacOS',
 ]
 dependencies = [
-    "numpy>=2.0.0,<2.5.0",
-    "matplotlib>=3.10.0,<3.11.0",
-    "plotly>=7.0.0,<7.2.0",
+    "numpy>=2.0.0,<2.6.0",
     "tomlkit>=0.14.0,<0.16.0",
 ]
 dynamic = ["version"]
+
+[project.optional-dependencies]
+plotting = [
+    "matplotlib>=3.10.0,<3.11.0",
+    "plotly>=7.0.0,<7.2.0",
+]
 
 [dependency-groups]
 dev = [
