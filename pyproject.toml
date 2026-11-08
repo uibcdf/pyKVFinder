@@ -58,7 +58,7 @@ classifiers = [
 ]
 dependencies = [
     "numpy>=2.0.0,<2.6.0",
-    "tomlkit>=0.14.0,<0.16.0",
+    "tomlkit>=0.14.0",
 ]
 dynamic = ["version"]
 
