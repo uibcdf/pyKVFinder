@@ -69,3 +69,26 @@ An original-workflow TopoMT source pilot produced 12 cavities on the retained
 engine rerun. Version 0.9.6+uibcdf.2 changes only the dependency/version/test
 metadata relative to the first compiled compatibility source; scientific files
 and compiler optimization flags remain unchanged.
+
+## tomlkit floor and final source artifact
+
+The `tomlkit>=0.14.0` floor was exercised with tomlkit 0.14.0 in a separate
+import directory: 68 upstream box/hydropathy/export and metadata/TOML controls
+passed. The shared environment stayed on 0.15.2. No 0.16 runtime was available
+or claimed. Only the public load/dump API is used by the scientific package.
+
+The 0.9.6+uibcdf.2 Linux/CPython-3.14 development wheel built from source commit
+`6986f6787fe460afcc2834a600b9085b305b3d95` has SHA-256
+`75ca16857992cb7b9f45572336b6a97d028889b0e0729482d34d837310a01e7f`.
+Its native extension SHA-256 is
+`2c98ef8a500effb64ece4a182d691df6d89e8e603635e25781c6c9f5ff09d0c2`,
+identical to the first compatibility build. The algorithm modules and data files
+are unchanged, so the completed scientific controls remain applicable.
+All 12 original cavity descriptors agree between the two builds on the retained
+1AKD source. The designated TopoMT source gate also passes directly from the
+compiled compatibility checkout, including a valid-empty result and saved recovery.
+
+The native artifact remains local development evidence. No PyPI/Conda release
+or general platform/Python qualification is implied. Rebuild the extension after
+editing its C/SWIG sources; Python-only source edits remain visible through the
+explicit source-root route.

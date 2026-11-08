@@ -1,8 +1,8 @@
 """Packaging checks only; native/scientific compatibility needs its own tests."""
 
-import tomlkit
 from pathlib import Path
 
+import tomlkit
 from packaging.requirements import Requirement
 
 
